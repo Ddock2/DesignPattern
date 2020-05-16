@@ -1,0 +1,132 @@
+<Strategy Pattern>
+
+    "알고리즘군을 정의하고 각각을 캡슐화하여 바꿔 쓸 수 있게 만든다"
+    "활용 시 알고리즘을 사용하는 클라이언트와 독립적으로 알고리즘을 변경할 수 있다"
+    
+
+    행위를 클래스로 캡슐화 => 동적으로 행위 변경 가능
+
+    행위 클래스들은 interface를 만든 후 상속받아 호출될 함수 이름을 지정하여 사용
+    (interface 클래스에 행위 클래스 set하여 사용) 
+
+
+
+
+*** tip 디자인 원칙 ***
+    * 애플리케이션에서 달라지는 부분을 찾아내고, 달라지지 않는 부분으로부터 분리
+        달라지는 부분을 찾아서 나머지 코드에 영향을 주지 않도록 "캡슐화"
+            => 코드 변경 시 의도하지 않은 일 발생 감소, 시스템 유연성 향상
+    
+    * 구현이 아닌 interface에 맞춰 프로그래밍
+
+    * 상속보다 구성을 활용할 것
+        "A는 B이다" 보다 "A에는 B가 있다" 가 나을 수 있다
+        무조건적인 상속보다 클래스를 합치는 것도 고려
+            // ex) 행위를 상속받지 않고 행동 객체로 구성
+
+
+
+
+책 예문 요약
+ex)
+    현상황
+        class Duck
+            public :
+                virtual void quack()    { ...꽥 }
+                virtual void swim()     { ... }
+                virtual void display() = 0;     // pure virtual function == 추상메서드
+
+
+        class MallarDuck : public Duck
+            public :
+                virtual void display()  { ... }
+
+        class RedheadDuck : public Duck
+            public :
+                virtual void display()  { ... }
+
+        class RubberDuck : public Duck
+            public :
+                virtual void quack()    { ...삑 }
+                virtual void display()  { ... }
+    -----------------------------------------------------------------------------------------
+    목표
+        MallardDuck - quack, swim, display + fly
+        RedheadDuck - quack, swim, display + fly
+        RubberDuck  - quack, swim, display
+
+
+        Duck - quack(), swim(), display()   <= fly() 추가 하려는 상황
+            MallardDuck
+            RedheadDuck
+            RubberDuck                      <= fly() 해당 안하는 오리 존재
+
+    문제
+        super class에 fly() 추가 시 해당 동작 필요 없는 sub class 존재
+        추가 후 override 하여 사용하면 유지보수 힘들어 짐
+    
+        => strategy pattern 적용하기!!!
+    -----------------------------------------------------------------------------------------
+    결과
+        class Duck
+            private :
+                FlyBehavior flyBehavior
+                QuackBehvior quackBehavior
+            public :
+                Duck() {}
+                Duck(FlyBehavior instnace1, QuackBehvior instnace2) {SetFlyBehavior(instnace1); SetQuackBehvior(instnace2);}
+
+                void SetFlyBehavior(FlyBehavior instnace) { flyBehavior = instnace; }
+                void SetQuackBehvior(QuackBehvior instnace) { quackBehavior = instnace; }
+
+                virtual void performQuack()    { quackBehavior.quack(); }
+                virtual void swim()     { ... }
+                virtual void display() = 0;
+                virtual void performFly()    { flyBehavior.fly(); }
+
+
+        class MallarDuck : public Duck
+            public :
+                virtual void display()  { ... }
+
+        class RedheadDuck : public Duck
+            public :
+                virtual void display()  { ... }
+
+        class RubberDuck : public Duck
+            public :
+                virtual void display()  { ... }
+        
+
+
+        interface FlyBehavior
+            virtual void fly() = 0;
+
+        class FlyWithWings : public FlyBehavior
+            virtual void fly() { ...난다 }
+
+        class FlyNoWay : public FlyBehavior
+            virtual void fly() { ...못난다 }
+
+
+        interface QuackBehvior
+            virtual void quack()
+
+        class Quack : public QuackBehvior
+            virtual void quack() { ...꽥 }
+        
+        class Squack : public QuackBehvior
+            virtual void quack() { ...삑 }
+        
+        class MuteQuack : public QuackBehvior
+            virtual void quack() { ... }
+
+
+
+
+적용 프로젝트 git에 올릴 예정(작업 중)       // https://github.com/Ddock2/DesignPattern
+    (idea)
+        parser
+            jsonParser
+            xmlParser
+            stringParser    - key없이 value만 넣을 예정 ('\' 로 구분예정)
