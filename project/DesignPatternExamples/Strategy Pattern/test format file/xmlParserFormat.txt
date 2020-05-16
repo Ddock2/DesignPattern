@@ -1,0 +1,5 @@
+<Root>
+	<IntValue>10</IntValue>
+	<FloatValue>0.1</FloatValue>
+	<PersonalData Name="kbm" Name2="Ddock2" Age="26" Gender="Male" Job="developer"/>
+</Root>
