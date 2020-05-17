@@ -135,6 +135,7 @@
     <ClCompile Include="..\..\Strategy Pattern\class\PrintContentsForXml.cpp" />
     <ClCompile Include="..\..\Strategy Pattern\class\StringParser.cpp" />
     <ClCompile Include="..\..\Strategy Pattern\class\XmlParser.cpp" />
+    <ClCompile Include="..\..\Strategy Pattern\extern tools\jsoncpp\jsoncpp.cpp" />
     <ClCompile Include="..\..\Strategy Pattern\strategy_main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +147,8 @@
     <ClInclude Include="..\..\Strategy Pattern\class\PrintContentsForXml.h" />
     <ClInclude Include="..\..\Strategy Pattern\class\StringParser.h" />
     <ClInclude Include="..\..\Strategy Pattern\class\XmlParser.h" />
+    <ClInclude Include="..\..\Strategy Pattern\extern tools\jsoncpp\json\json-forwards.h" />
+    <ClInclude Include="..\..\Strategy Pattern\extern tools\jsoncpp\json\json.h" />
     <ClInclude Include="..\..\Strategy Pattern\strategy_main.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

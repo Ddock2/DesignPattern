@@ -13,8 +13,23 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="클래스">
+    <Filter Include="소스 파일\클래스">
       <UniqueIdentifier>{212ef21a-b3d5-4071-915b-c29d104956f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\클래스\Parser">
+      <UniqueIdentifier>{e6b53c03-c846-4cf8-823f-8c24657d3579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\클래스\Parser\sub">
+      <UniqueIdentifier>{4064bd29-4b01-4e44-9a20-6403073fc171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\open source parser">
+      <UniqueIdentifier>{d1b10d87-d93d-49a2-a2ee-d9990a32de07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\클래스\PrintContentsBehavior">
+      <UniqueIdentifier>{23ccfb8d-0c01-493d-aef6-41f8989e7989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\클래스\PrintContentsBehavior\sub">
+      <UniqueIdentifier>{6e671014-9c40-44dc-b229-05b42189f2b0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -22,54 +37,63 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Strategy Pattern\class\Parser.cpp">
-      <Filter>클래스</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Strategy Pattern\class\PrintContentsForString.cpp">
-      <Filter>클래스</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Strategy Pattern\class\StringParser.cpp">
-      <Filter>클래스</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Strategy Pattern\class\JsonParser.cpp">
-      <Filter>클래스</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Strategy Pattern\class\XmlParser.cpp">
-      <Filter>클래스</Filter>
+      <Filter>소스 파일\클래스\Parser</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Strategy Pattern\class\PrintContentsForJson.cpp">
-      <Filter>클래스</Filter>
+      <Filter>소스 파일\클래스\PrintContentsBehavior\sub</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Strategy Pattern\class\PrintContentsForString.cpp">
+      <Filter>소스 파일\클래스\PrintContentsBehavior\sub</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Strategy Pattern\class\PrintContentsForXml.cpp">
-      <Filter>클래스</Filter>
+      <Filter>소스 파일\클래스\PrintContentsBehavior\sub</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Strategy Pattern\class\JsonParser.cpp">
+      <Filter>소스 파일\클래스\Parser\sub</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Strategy Pattern\class\StringParser.cpp">
+      <Filter>소스 파일\클래스\Parser\sub</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Strategy Pattern\class\XmlParser.cpp">
+      <Filter>소스 파일\클래스\Parser\sub</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Strategy Pattern\extern tools\jsoncpp\jsoncpp.cpp">
+      <Filter>리소스 파일\open source parser</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Strategy Pattern\strategy_main.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Strategy Pattern\class\Parser.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Strategy Pattern\class\PrintContentsBehavior.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Strategy Pattern\class\PrintContentsForString.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="..\..\Strategy Pattern\class\JsonParser.h">
+      <Filter>소스 파일\클래스\Parser\sub</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Strategy Pattern\class\StringParser.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Strategy Pattern\class\JsonParser.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>소스 파일\클래스\Parser\sub</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Strategy Pattern\class\XmlParser.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>소스 파일\클래스\Parser\sub</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Strategy Pattern\class\PrintContentsForJson.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>소스 파일\클래스\PrintContentsBehavior\sub</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Strategy Pattern\class\PrintContentsForString.h">
+      <Filter>소스 파일\클래스\PrintContentsBehavior\sub</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Strategy Pattern\class\PrintContentsForXml.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>소스 파일\클래스\PrintContentsBehavior\sub</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Strategy Pattern\class\PrintContentsBehavior.h">
+      <Filter>소스 파일\클래스\PrintContentsBehavior</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Strategy Pattern\class\Parser.h">
+      <Filter>소스 파일\클래스\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Strategy Pattern\extern tools\jsoncpp\json\json-forwards.h">
+      <Filter>리소스 파일\open source parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Strategy Pattern\extern tools\jsoncpp\json\json.h">
+      <Filter>리소스 파일\open source parser</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

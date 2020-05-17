@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "PrintContentsForString.h"
 
 void PrintContentsForString::PrintContents(char * rawString, int length)

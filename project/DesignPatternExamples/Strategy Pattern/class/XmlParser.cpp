@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "XmlParser.h"
 
 XmlParser::XmlParser()

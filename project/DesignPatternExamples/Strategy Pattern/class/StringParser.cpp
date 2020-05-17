@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "StringParser.h"
 
 StringParser::StringParser()

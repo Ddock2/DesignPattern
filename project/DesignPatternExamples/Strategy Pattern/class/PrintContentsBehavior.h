@@ -1,8 +1,8 @@
 #pragma once
 
-#define interface class
+#define interface_ class
 
-interface PrintContentsBehavior
+interface_ PrintContentsBehavior
 {
 public:
 	virtual void PrintContents(char * rawString, int length) = 0;

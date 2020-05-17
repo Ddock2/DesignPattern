@@ -1,5 +1,6 @@
 #pragma once
 
+#include <stdio.h>
 #include "Parser.h"
 
 class JsonParser : public Parser

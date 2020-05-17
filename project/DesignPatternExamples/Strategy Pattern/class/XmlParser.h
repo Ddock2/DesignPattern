@@ -1,5 +1,6 @@
 #pragma once
 
+#include <stdio.h>
 #include "Parser.h"
 
 class XmlParser : public Parser

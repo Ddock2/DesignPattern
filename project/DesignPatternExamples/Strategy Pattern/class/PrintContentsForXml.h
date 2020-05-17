@@ -1,5 +1,6 @@
 #pragma once
 
+#include <stdio.h>
 #include "PrintContentsBehavior.h"
 
 class PrintContentsForXml : public PrintContentsBehavior
