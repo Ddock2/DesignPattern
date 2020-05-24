@@ -91,7 +91,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)\..\DesignPatternExamples\Strategy Pattern\class\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\DesignPatternExamples\code\Strategy Pattern\class\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalUsingDirectories>
       </AdditionalUsingDirectories>
     </ClCompile>
@@ -128,28 +128,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Strategy Pattern\class\JsonParser.cpp" />
-    <ClCompile Include="..\..\Strategy Pattern\class\Parser.cpp" />
-    <ClCompile Include="..\..\Strategy Pattern\class\PrintContentsForJson.cpp" />
-    <ClCompile Include="..\..\Strategy Pattern\class\PrintContentsForString.cpp" />
-    <ClCompile Include="..\..\Strategy Pattern\class\PrintContentsForXml.cpp" />
-    <ClCompile Include="..\..\Strategy Pattern\class\StringParser.cpp" />
-    <ClCompile Include="..\..\Strategy Pattern\class\XmlParser.cpp" />
-    <ClCompile Include="..\..\Strategy Pattern\extern tools\jsoncpp\jsoncpp.cpp" />
-    <ClCompile Include="..\..\Strategy Pattern\strategy_main.cpp" />
+    <ClCompile Include="..\..\code\Strategy Pattern\class\JsonParser.cpp" />
+    <ClCompile Include="..\..\code\Strategy Pattern\class\Parser.cpp" />
+    <ClCompile Include="..\..\code\Strategy Pattern\class\PrintContentsForJson.cpp" />
+    <ClCompile Include="..\..\code\Strategy Pattern\class\PrintContentsForString.cpp" />
+    <ClCompile Include="..\..\code\Strategy Pattern\class\PrintContentsForXml.cpp" />
+    <ClCompile Include="..\..\code\Strategy Pattern\class\StringParser.cpp" />
+    <ClCompile Include="..\..\code\Strategy Pattern\class\XmlParser.cpp" />
+    <ClCompile Include="..\..\code\Strategy Pattern\extern tools\jsoncpp\jsoncpp.cpp" />
+    <ClCompile Include="..\..\code\Strategy Pattern\strategy_main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Strategy Pattern\class\JsonParser.h" />
-    <ClInclude Include="..\..\Strategy Pattern\class\Parser.h" />
-    <ClInclude Include="..\..\Strategy Pattern\class\PrintContentsBehavior.h" />
-    <ClInclude Include="..\..\Strategy Pattern\class\PrintContentsForJson.h" />
-    <ClInclude Include="..\..\Strategy Pattern\class\PrintContentsForString.h" />
-    <ClInclude Include="..\..\Strategy Pattern\class\PrintContentsForXml.h" />
-    <ClInclude Include="..\..\Strategy Pattern\class\StringParser.h" />
-    <ClInclude Include="..\..\Strategy Pattern\class\XmlParser.h" />
-    <ClInclude Include="..\..\Strategy Pattern\extern tools\jsoncpp\json\json-forwards.h" />
-    <ClInclude Include="..\..\Strategy Pattern\extern tools\jsoncpp\json\json.h" />
-    <ClInclude Include="..\..\Strategy Pattern\strategy_main.h" />
+    <ClInclude Include="..\..\code\Strategy Pattern\class\JsonParser.h" />
+    <ClInclude Include="..\..\code\Strategy Pattern\class\Parser.h" />
+    <ClInclude Include="..\..\code\Strategy Pattern\class\PrintContentsBehavior.h" />
+    <ClInclude Include="..\..\code\Strategy Pattern\class\PrintContentsForJson.h" />
+    <ClInclude Include="..\..\code\Strategy Pattern\class\PrintContentsForString.h" />
+    <ClInclude Include="..\..\code\Strategy Pattern\class\PrintContentsForXml.h" />
+    <ClInclude Include="..\..\code\Strategy Pattern\class\StringParser.h" />
+    <ClInclude Include="..\..\code\Strategy Pattern\class\XmlParser.h" />
+    <ClInclude Include="..\..\code\Strategy Pattern\extern tools\jsoncpp\json\json-forwards.h" />
+    <ClInclude Include="..\..\code\Strategy Pattern\extern tools\jsoncpp\json\json.h" />
+    <ClInclude Include="..\..\code\Strategy Pattern\strategy_main.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

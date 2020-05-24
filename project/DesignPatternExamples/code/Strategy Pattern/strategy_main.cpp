@@ -26,7 +26,7 @@ int main()
 	/////////////////////////////////////////////////////////////////////////////
 	// StringParser Test
 	memset(fileName, 0, sizeof(fileName));
-	strcpy(fileName, "..\\..\\Strategy Pattern\\test format file\\stringParserFormat.txt");
+	strcpy(fileName, "..\\..\\code\\Strategy Pattern\\test format file\\stringParserFormat.txt");
 
 	if (LoadRawString(fileName, &rawString, &size) == 0)
 	{
@@ -46,7 +46,7 @@ int main()
 	/////////////////////////////////////////////////////////////////////////////
 	// JsonParser Test
 	memset(fileName, 0, sizeof(fileName));
-	strcpy(fileName, "..\\..\\Strategy Pattern\\test format file\\jsonParserFormat.txt");
+	strcpy(fileName, "..\\..\\code\\Strategy Pattern\\test format file\\jsonParserFormat.txt");
 
 	if (LoadRawString(fileName, &rawString, &size) == 0)
 	{
