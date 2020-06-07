@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\클래스">
+      <UniqueIdentifier>{046b5111-f3c7-4157-8aab-dd4675c0b39b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\클래스\Pizza">
+      <UniqueIdentifier>{5e0e27af-85bc-422c-8b0d-92b3f76f81fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\클래스\PizzaStore">
+      <UniqueIdentifier>{83dac552-cefd-492e-a9e4-6baa0d333a89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\클래스\Pizza\NYPizza">
+      <UniqueIdentifier>{dbe18a5b-580c-496a-80ce-ea56857b3efa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\클래스\Pizza\ChicagoPizza">
+      <UniqueIdentifier>{c2d41bb1-d095-4442-9038-30fcd23a3b2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\클래스\PizzaIngredient">
+      <UniqueIdentifier>{1b4831c3-a712-4ba4-817f-0201abb702c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\클래스\PizzaIngredientFactory">
+      <UniqueIdentifier>{359df2ae-31ed-4ec3-b799-43f3a2a974bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\클래스\PizzaIngredient\Dough">
+      <UniqueIdentifier>{ba9e1b71-cc1e-4069-9db9-d501f155a83f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\클래스\PizzaIngredient\Cheese">
+      <UniqueIdentifier>{001f5868-374c-4596-8beb-f05c327cf4bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\클래스\PizzaIngredient\Sauce">
+      <UniqueIdentifier>{235063f1-a743-43ef-aac7-36365e0eb9f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\클래스\PizzaIngredient\Pepperoni">
+      <UniqueIdentifier>{99ac222b-b9e8-483b-b458-35f23a062c44}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\Factory Pattern\factory_main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\Factory Pattern\factory_main.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\interface_.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\Pizza.h">
+      <Filter>소스 파일\클래스\Pizza</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\PizzaStore.h">
+      <Filter>소스 파일\클래스\PizzaStore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\NYPizzaStore.h">
+      <Filter>소스 파일\클래스\PizzaStore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\NYCheesePizza.h">
+      <Filter>소스 파일\클래스\Pizza\NYPizza</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\NYPepperoniPizza.h">
+      <Filter>소스 파일\클래스\Pizza\NYPizza</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\PizzaIngredientFactory.h">
+      <Filter>소스 파일\클래스\PizzaIngredientFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\NYPizzaIngredientFactory.h">
+      <Filter>소스 파일\클래스\PizzaIngredientFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\Pepperoni.h">
+      <Filter>소스 파일\클래스\PizzaIngredient\Pepperoni</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\Dough.h">
+      <Filter>소스 파일\클래스\PizzaIngredient\Dough</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\Sauce.h">
+      <Filter>소스 파일\클래스\PizzaIngredient\Sauce</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\NYPepperoni.h">
+      <Filter>소스 파일\클래스\PizzaIngredient\Pepperoni</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\Cheese.h">
+      <Filter>소스 파일\클래스\PizzaIngredient\Cheese</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\ItalianPepperoni.h">
+      <Filter>소스 파일\클래스\PizzaIngredient\Pepperoni</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\ThinCrustDough.h">
+      <Filter>소스 파일\클래스\PizzaIngredient\Dough</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\ThickCrustDough.h">
+      <Filter>소스 파일\클래스\PizzaIngredient\Dough</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\MozzarellaCheese.h">
+      <Filter>소스 파일\클래스\PizzaIngredient\Cheese</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\ReggianoCheese.h">
+      <Filter>소스 파일\클래스\PizzaIngredient\Cheese</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\PlumTomatoSauce.h">
+      <Filter>소스 파일\클래스\PizzaIngredient\Sauce</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\MarinaraSauce.h">
+      <Filter>소스 파일\클래스\PizzaIngredient\Sauce</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\ChicagoPizzaStore.h">
+      <Filter>소스 파일\클래스\PizzaStore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\ChicagoCheesePizza.h">
+      <Filter>소스 파일\클래스\Pizza\ChicagoPizza</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\ChicagoPepperoniPizza.h">
+      <Filter>소스 파일\클래스\Pizza\ChicagoPizza</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Factory Pattern\class\ChicagoPizzaIngredientFactory.h">
+      <Filter>소스 파일\클래스\PizzaIngredientFactory</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
