@@ -1,0 +1,32 @@
+<Singleton Pattern>
+
+    싱글턴 패턴
+        해당 클래스의 인스턴스가 하나만 만들어지고,
+        어디서든지 그 인스턴스에 접근할 수 있도록 하기 위한 패턴
+
+        하나의 프로그램 내에서 공통적으로 쓰이는 자원 관리, 저장 할 때 주로 사용
+
+        멀티스레드 환경에서 인스턴스 접근 관리(스레드 동기화 작업...) 필요
+
+
+
+적용 프로젝트 git에       // https://github.com/Ddock2/DesignPattern
+    책 예문 구현
+        ChocolateBoiler
+            private :
+                bool empty
+                bool boiled
+
+                static ChocolateBoiler uniqueInstance
+
+                ChocolateBoiler()
+            
+            public :
+                GetInstance()
+
+                void Fill()
+                void Drain()
+                void Boil()
+
+                bool IsEmpty()
+                bool IsBoiled()
