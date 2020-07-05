@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\클래스">
+      <UniqueIdentifier>{a497b5c5-75b6-4a5a-9ea0-dc0f7fbf3c0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\클래스\Duck">
+      <UniqueIdentifier>{d2266344-2876-48de-943d-6b8f4d7849d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\클래스\Turkkey">
+      <UniqueIdentifier>{9f045ab7-e9c7-4107-8063-13058d3de40e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\클래스\Adapter">
+      <UniqueIdentifier>{7f0ae604-c4c1-4928-aa32-c043cdabde2a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\Adapter Pattern\adaptor_main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Adapter Pattern\class\MallardDuck.cpp">
+      <Filter>소스 파일\클래스\Duck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Adapter Pattern\class\WildTurkey.cpp">
+      <Filter>소스 파일\클래스\Turkkey</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Adapter Pattern\class\TurkeyToDuckAdapter.cpp">
+      <Filter>소스 파일\클래스\Adapter</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\Adapter Pattern\adaptor_main.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Adapter Pattern\class\Duck.h">
+      <Filter>소스 파일\클래스\Duck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Adapter Pattern\class\MallardDuck.h">
+      <Filter>소스 파일\클래스\Duck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Adapter Pattern\class\Turkey.h">
+      <Filter>소스 파일\클래스\Turkkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Adapter Pattern\class\WildTurkey.h">
+      <Filter>소스 파일\클래스\Turkkey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Adapter Pattern\class\TurkeyToDuckAdapter.h">
+      <Filter>소스 파일\클래스\Adapter</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
