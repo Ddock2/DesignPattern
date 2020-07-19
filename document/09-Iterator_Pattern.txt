@@ -1,0 +1,16 @@
+<Iterator Pattern>
+
+    이터레이터 패턴
+        컬렉션 구현 방법을 노출시키지 않으면서도 그 집합체 안에 들어있는 모든 항목에 접근할 수 있게
+        해주는 방법을 제공
+
+        hasNext(), next()
+
+    
+*** tip 디자인 원칙 ***
+    * 단일 역할 원칙
+        클래스를 바꾸는 이유는 한 가지 뿐이어야 한다
+
+
+적용 프로젝트 git에       // https://github.com/Ddock2/DesignPattern
+    
